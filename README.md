@@ -11,10 +11,10 @@
 
 ### Publico al que apuntamos como empresa. 
 
-    Si bien no hay acepción de personas, como Casa de Sushi buscamos atraer a todos aquellos que aún no conocen, ni probaron el Sushi como tal, un plato lleno de sabores y cultura 
+    Si bien no hay acepción de personas, como Casa de Sushi buscamos atraer a todos aquellos que aún no conocen, ni probaron el Sushi como tal, un plato lleno de sabores y cultura.
  
 
-###Quienes integramos el equipo de Resto Sushi?  
+### Quienes integramos el equipo de Resto Sushi?  
 
    Somos 4 socios, entusiasmados por lanzar nuestro proyecto: 
 
@@ -27,15 +27,14 @@
    Daniel Claure: 39 años, instalador electricista independiente, innovador, emprendedor y gran promotor del trabajo ordenado 
    
 
-###Referencias de nuestro eccomerce. 
+### Eccomerce que usamos de referencia. 
   
-  https://otakusushi.com.ar/ 
+  De https://otakusushi.com.ar/ tomamos de referencia la presentacion del header y el main, ademas de la distribución de las imagenes. 
 
-  https://www.sushiclub.com.ar/ 
+  De https://www.sushiclub.com.ar/ tomamos como principal la vista del home, principalmente en su version desktop.
 
-  https://www.amazon.com/ 
+  Tanto https://www.amazon.com/ como https://www.mercadolibre.com.ar/ fueron usados de referencia para el carrito de compras, mas la facilidad para poder efectuar una compra, en pocos pasos.
 
-  https://www.mercadolibre.com.ar/ 
-
-  https://www.vips.es/ 
+  De https://www.vips.es/ nos llamo la atencion la forma en que se presentan/despliegan los elementos del header y el main para poder mostrar los productos.
+  
   
