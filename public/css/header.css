@@ -1,0 +1,185 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+/* Configuración General */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* Configuración de todo el HEADER */
+header {
+  
+  font-family: "Montzerrat", sans-serif;
+  width: 100%;
+  height: 20vh;
+  background-color: #1d1c1b;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px rgb(96, 138, 60, 4);
+}
+/* Navegation */
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* PARA PANTALLA DE 320 DE ANCHO */
+/* Logo de la pagina */
+.logo {
+  width: 80px;
+  margin-left: 15px;
+}
+/*  Buscador */
+.search {
+  border-radius: 5px;
+  border: 3px solid #608a3c;
+  padding: 0.2rem;
+  background-color: #fff;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-search {
+  border: none;
+  width: 135px;
+}
+.input-search:focus {
+  outline: none;
+}
+.input-search::placeholder {
+  text-transform: uppercase;
+  color: #608a3c;
+}
+.btn-search {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #608a3c;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.2s ease-in;
+}
+.btn-search:hover {
+  background-color: rgba(96, 138, 60, 0.75);
+  color: #fff;
+  padding: 2px;
+}
+/* BOTON DESPLEGABLE */
+.btn-bar {
+  font-size: 25px;
+  color: #608a3c;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn-bar:hover {
+  background-color: rgba(96, 138, 60, 0.5);
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px;
+  transition: all 0.2s;
+}
+
+/* MENU DE NAVEGACION */
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background-color: rgba(29, 28, 27, 0.5);
+  text-align: center;
+  transition: 0.5s;
+}
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+}
+.nav-menu li a {
+  color: #b5fe83;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-menu li a:hover {
+  background-color: rgba(96, 138, 60, 0.5);
+  padding: 6px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.1s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+@media screen and (min-width: 744px) {
+  header{
+    height: 10vh;
+  }
+  /* Logo de la pagina */
+  .logo {
+    width: 100px;
+    margin: 20px;
+  }
+  /*  Buscador */
+  .search {
+    padding: 0.5rem;
+  }
+
+  .input-search {
+    width: 200px;
+  }
+
+  .btn-bar {
+    display: none;
+  }
+  /* MENU DE NAVEGACION */
+  .nav-menu {
+    position: relative;
+    justify-content: space-between;
+    top: 0px;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    justify-content: space-between;
+    line-height: 0;
+    margin: 0 20px;
+    
+  }
+  
+  .nav-menu li a {
+  
+    font-size: 20px;
+    color:#608a3c;
+  }
+
+  #check:checked ~ .nav-menu {
+    height: 0vh;
+  }
+  #check:checked ~ .nav-menu li {
+    display: inline-block;
+  }
+}
+
+
+@media (min-width:1024px){
+  header{
+    height: 20vh;
+  }
+}
