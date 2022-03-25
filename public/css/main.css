@@ -97,8 +97,8 @@ ul.menu_slider li a{
     top: 105vh;
     left: 50%;
     opacity: 0;
-    transition: opacity .5s;
     transform: translate(-50%, -50%);
+    transition: opacity .5s;
     
 }
 
@@ -130,7 +130,9 @@ ul.menu_slider li a{
     display: inline-block;
     text-align: center;
     position: absolute;
-    top: 130vh;
+    top:115vh ;    /* left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%); */
 }
 .btn_slide{
     display: inline-block;
@@ -146,28 +148,28 @@ ul.menu_slider li a{
 /* Mapa */
 .ubicacion{
     width: auto;
-    height: auto;
     position: absolute;
-    top: 155vh;
+    top: 135vh;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 10px;
+    margin-top: 1rem;
     border-top: solid #1d1d1d 1px;
     border-bottom: solid #1d1d1d 1px;
 }
 .mapa{
-
+    height: 30vh;
 }
 
 /* WSP */
 
-.wsp{
+/* .wsp{
     position: fixed;
     bottom: 1rem;
     right: 1.5rem;
     color: #25D366 ;
     font-size: 2rem;
-}
+} */
 
 
 @media (min-width: 768px){
@@ -210,7 +212,7 @@ ul.menu_slider li a{
         display: inline-block;
         text-align: center;
         position: absolute;
-        top: 110vh;
+        top: 105vh;
     } 
 
     /* Mapa */
@@ -231,10 +233,7 @@ ul.menu_slider li a{
     
 }
 
-@media (max-width:769px){
-    
 
-}
 
 @media (min-width:1024px){
     .slider2_container{
@@ -243,8 +242,6 @@ ul.menu_slider li a{
     
     .tweets li{
         position: absolute;
-        width: 600px;
-        height: auto;
         top: 105vh;
         left: 50%;
         opacity: 0;
@@ -255,7 +252,7 @@ ul.menu_slider li a{
     
     
     .menu_tweets ul.btns{
-        top: 127vh;
+        top: 120vh;
     }
     .btn_slide{
       padding: 15px;

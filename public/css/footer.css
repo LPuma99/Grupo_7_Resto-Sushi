@@ -1,5 +1,4 @@
- 
-footer{
+  footer{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -98,7 +97,7 @@ ul{
     footer{
         position: relative;
     }
-}   
+}    
 
 
 
@@ -109,7 +108,7 @@ ul{
 
 /* Footer lucas */
 
-/*   footer{
+  /*  footer{
     position: absolute;
     bottom: -175vh;
     width: 100%;
@@ -202,8 +201,9 @@ ul{
   
   @media (min-width: 768px){
     footer{
-      bottom: -100vh;
+      bottom: -115vh;
     }
+
   }
 
   @media (max-width: 767px){
@@ -220,6 +220,6 @@ ul{
 
 @media (min-width: 1024px){
   footer{
-    bottom: -140vh;
+    bottom: -130vh;
   }
-} */
+}  */
