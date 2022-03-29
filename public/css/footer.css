@@ -1,4 +1,4 @@
-  footer{
+/*   footer{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -99,7 +99,7 @@ ul{
     }
 }    
 
-
+ */
 
 
 
@@ -108,7 +108,7 @@ ul{
 
 /* Footer lucas */
 
-  /*  footer{
+    footer{
     position: absolute;
     bottom: -175vh;
     width: 100%;
@@ -222,4 +222,4 @@ ul{
   footer{
     bottom: -130vh;
   }
-}  */
+}  

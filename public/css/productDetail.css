@@ -1,0 +1,134 @@
+.detalleContainerGeneral{
+    display: flex;
+    justify-content: center;
+}
+.detailContainer{
+    position: absolute;
+    top: 15vh;
+    box-shadow: 4px 4px 8px #a39382 ;
+}
+.producto{
+    border: solid #1d1d1d 1px;
+    width: 100vw;
+    height: 85vh;
+    /* margin-top: 2rem; */
+    background: #fdfffd;
+}
+
+.img img{
+    /* display: none; */
+    width: 100vw;
+    object-fit: cover;
+    margin-bottom: 1rem ;
+}
+
+.descripcion h3{
+    margin-left: 1rem;
+}
+
+.descPlato{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+span, .agregar{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+    
+}
+
+.costoContainer{
+    display: flex;
+    text-align: center;
+    
+}
+span.costo{
+    display: inline-block;
+    justify-content: center;
+    background: rgba(96, 138, 60, 0.5);
+    box-shadow: 1px 2px 5px #416720 ;
+    margin: 10px auto;
+}
+
+
+.agregar button{
+    background: #fe761b8b ;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px  ;
+    margin-top: 1rem;
+}
+
+@media (min-width:768px) {
+    
+    .img img{
+        /* display: none; */
+        width: 100vw;
+        height: 65vh;
+        object-fit: cover;
+        margin-bottom: 1rem ;
+    }
+    
+    .descripcion h3{
+        margin-left: 1rem;
+    }
+    
+    .descPlato{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    
+    span, .agregar{
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
+        
+    }
+    
+    .costoContainer{
+        display: flex;
+        text-align: center;
+        
+    }
+    span.costo{
+        display: inline-block;
+        justify-content: center;
+        background: rgba(96, 138, 60, 0.5);
+        box-shadow: 1px 2px 5px #416720 ;
+        margin: 10px auto;
+    }
+    
+    
+    .agregar button{
+        background: #fe761b8b ;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px  ;
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (min-width:1024px) {
+    
+    .img img{
+        height: 55vh;
+        margin-bottom: 0.5rem ;
+    }
+    
+    
+    span.costo{
+        display: inline-block;
+        justify-content: center;
+        background: rgba(96, 138, 60, 0.5);
+        box-shadow: 1px 2px 5px #416720 ;
+        margin: 5px auto;
+    }
+    
+    
+    .agregar button{
+        box-shadow: 2px 2px 3px  grey;
+    }
+    
+}

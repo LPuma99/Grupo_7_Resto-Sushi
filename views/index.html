@@ -13,36 +13,46 @@
 </head>
 <body>
 <!-- HEADER -->
-<header>
-    <nav>
-        <div>
-            <img src="/public/images/Logo/Recurso 12.png" alt="logoRestoSushi" class="logo">
+<header class="header-container-gral">
+    <div class="header-container">
+        <!-- LOGO -->
+        <div class="header-container-logo">
+            <img src="/public/images/Logo/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
         </div>
-
-        <div class="search">
-            <form action="">
-                <input class="input-search" type="text" placeholder="buscar">
-                <button class="btn-search" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+        <!-- BUSCADOR -->
+        <div class="header-container-search">
+            <form autocomplete="of" class="form-search">
+                <div class="div-input">
+                    <input type="text" name="search" placeholder="BUSCAR" class="input-search">
+                </div>
             </form>
         </div>
-        
-            <input type="checkbox" id="check">
-            <label for="check" class="btn-bar">
-                <i class="fa-solid fa-bars"></i>
+        <!-- MENU DE NAVEGACION -->
+        <nav class="header-container-nav">
+
+            <label for="check" class="nav-label">
+                <img src="../public/images/icons/bars.svg" alt="bar" class="btn-nav-bars">
             </label>
-        
-            <ul class="nav-menu">
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-            </ul>
-        
+            <input type="checkbox" id="check" class="check-input">
+            <div class="nav-menu-link">
+                <a href="#" class="nav-link">MENU</a>
+                <a href="#" class="nav-link">MENU</a>
+                <a href="#" class="nav-link">MENU</a>
+            </div>
 
+        </nav>
+        <!-- CARRITO DE COMPRAS -->
+        <div class="header-container-shopping">
+            <img src="/public/images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
+        </div>
+        <!-- AVATAR -->
+        <div class="header-container-avatar">
+            <img src="/public/images/icons/avatarSushi.jpg" alt="avatar" class="img-avatar">
+            <div class="avatar-state">
 
-    </nav>
-
+            </div>
+        </div>
+    </div>
 </header>
 <!-- INICIO -->
 
