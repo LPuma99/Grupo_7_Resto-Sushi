@@ -6,7 +6,7 @@
 	-Seguir manteniendo el compañerismo.
 
 ### Hacer mas:
-	-Reuniones productivasy eficientes.
+	-Reuniones productivas y eficientes.
 	-Reuniones solidas sobre temas específicos.
 
 ### Empezar a hacer:
