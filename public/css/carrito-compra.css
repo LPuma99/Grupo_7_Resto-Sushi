@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 * {
@@ -6,11 +15,13 @@
   box-sizing: border-box;
 }
 /* PHONE */
-
+body {
+  font-family: "Montserrat", sans-serif;
+}
 /* HEADER */
 .header-container-gral {
   background-color: #1d1c1b;
-  height: 15vh;
+  height: 100px;
   width: 100%;
 }
 .header-container {
@@ -58,7 +69,7 @@
   font-weight: normal;
   color: black;
   padding-left: 24px;
-  background-image: url(search2.png);
+  background-image: url(/public/images/icons/search2.png);
   background-size: 18px;
   background-repeat: no-repeat;
   width: 0px;
@@ -233,3 +244,265 @@
     display: none;
   }
 }
+
+/* FIN HEADER */
+
+
+
+/* MAIN */
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-color: white;
+    height: 100%;
+}
+
+h1{
+    font-style:italic;
+    color: #24262b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.carrito-compra{
+    height: 100%;
+}
+
+
+
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
+.detalle-pedido{
+   width: 70%;
+   height: 70%;
+   font-size: 20px;
+   justify-items: auto;
+}
+
+
+.productos-carrito{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    align-items: center;
+}
+
+
+
+.detalle-subtotal{
+    width: 30%;
+    border: 0.8px solid black;
+}
+
+.detalle-subtotal section .subtotal{
+    padding-top: 40px;
+}
+
+
+img {
+    width: 10%;
+    height: 10%;
+}
+
+
+.info-pedido{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    border: 0.3px solid black;
+}
+
+
+.subtotal-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.subtotal-info button{
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+
+.subtotal-info button:hover{
+    background: #24262b;
+    color: #fff !important;
+}
+
+.precio-final{
+    font-size: 100%;
+}
+
+.subtotal-info p{
+    margin-left: 5%;
+}
+
+.subtotal-info h2{
+    font-size: 100%;
+    text-align: center;
+    margin-top: 4%;
+    
+}
+
+.botones{
+    padding-left: 70%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.botones button{
+    border-radius: 10%;
+  
+}
+.botones button:hover{
+    background: #24262b;
+    color: #fff !important;
+}
+
+
+@media (max-width: 500px){
+    .info-pedido{
+        display: flex;
+        flex-direction: row;
+        font-size: 80%;
+    }
+
+}
+
+
+/* FIN MAIN */
+
+
+
+/*FOOTER */
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+}
+
+
+.container-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size:18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orange;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .redes-sociales-footer a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .redes-sociales-footer a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+} 
+
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    footer{
+        position: relative;
+    }
+}
+
+
+/* FIN FOOTER*/
