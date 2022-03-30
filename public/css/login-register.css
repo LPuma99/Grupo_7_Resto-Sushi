@@ -68,9 +68,9 @@ body {
   background-color: transparent;
   font-weight: normal;
   color: black;
-  padding-left: 24px;
-  background-image: url(/public/images/imgs/search2.png);
-  background-size: 18px;
+  padding-left: 35px;
+  background-image: url(../images/icons/search2.png);
+  background-size: 33px;
   background-repeat: no-repeat;
   width: 0px;
   transition: all 1s;
