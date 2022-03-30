@@ -1,193 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
+    <link rel="shortcut icon" href="../public/images/Logo/Recurso 12.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="/Images/Recurso 12.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/style.css">
     <script src="https://kit.fontawesome.com/45870a9a9c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/css/style.css">
     <title>Resto Sushi</title>
 </head>
+
 <body>
-<!-- HEADER -->
-<header class="header-container-gral">
-    <div class="header-container">
-        <!-- LOGO -->
-        <div class="header-container-logo">
-            <img src="/public/images/Logo/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
-        </div>
-        <!-- BUSCADOR -->
-        <div class="header-container-search">
-            <form autocomplete="of" class="form-search">
-                <div class="div-input">
-                    <input type="text" name="search" placeholder="BUSCAR" class="input-search">
+    <!-- HEADER -->
+    <header class="header-container-gral">
+        <div class="header-container">
+            <!-- LOGO -->
+            <div class="header-container-logo">
+                <img src="../public/images/Logo/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
+            </div>
+            <!-- BUSCADOR -->
+            <div class="header-container-search">
+                <form autocomplete="of" class="form-search">
+                    <div class="div-input">
+                        <input type="text" name="search" placeholder="BUSCAR" class="input-search">
+                    </div>
+                </form>
+            </div>
+            <!-- MENU DE NAVEGACION -->
+            <nav class="header-container-nav">
+
+                <label for="check" class="nav-label">
+                    <img src="../public/images/icons/bars.svg" alt="bar" class="btn-nav-bars">
+                </label>
+                <input type="checkbox" id="check" class="check-input">
+                <div class="nav-menu-link">
+                    <a href="#" class="nav-link">MENU</a>
+                    <a href="#" class="nav-link">MENU</a>
+                    <a href="#" class="nav-link">MENU</a>
                 </div>
-            </form>
-        </div>
-        <!-- MENU DE NAVEGACION -->
-        <nav class="header-container-nav">
 
-            <label for="check" class="nav-label">
-                <img src="../public/images/icons/bars.svg" alt="bar" class="btn-nav-bars">
-            </label>
-            <input type="checkbox" id="check" class="check-input">
-            <div class="nav-menu-link">
-                <a href="#" class="nav-link">MENU</a>
-                <a href="#" class="nav-link">MENU</a>
-                <a href="#" class="nav-link">MENU</a>
+            </nav>
+            <!-- CARRITO DE COMPRAS -->
+            <div class="header-container-shopping">
+                <img src="../public/images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
             </div>
+            <!-- AVATAR -->
+            <div class="header-container-avatar">
+                <img src="../public/images/icons/avatarSushi.jpg" alt="avatar" class="img-avatar">
+                <div class="avatar-state">
 
-        </nav>
-        <!-- CARRITO DE COMPRAS -->
-        <div class="header-container-shopping">
-            <img src="/public/images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
-        </div>
-        <!-- AVATAR -->
-        <div class="header-container-avatar">
-            <img src="/public/images/icons/avatarSushi.jpg" alt="avatar" class="img-avatar">
-            <div class="avatar-state">
-
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- INICIO -->
+    </header>
+    <!-- END HEADER -->
+    <!-- INICIO -->
 
     <main>
-        
-            <div class="slider">
-                <div class="slider_container">
-<!-- Slides -->
-                        <ul class="slides">
-                            <li id="slide1">
-                                <img src="../public/images/imgs/plato6.jpg" alt="Oferta1">
-                            </li>
-                            <li id="slide2">
-                                <img src="../public/images/imgs/sushiman.jpg" alt="Oferta2">
-                            </li>
-                            <li id="slide3">
-                                <img src="../public/images/imgs/plato4.jpg" alt="Oferta3">
-                            </li>
-                        </ul>
-<!-- Texto central -->
-                        <div class="text_container">
-                            <div class="texto">
-                                <span><a href="#" class="btn_img">Seleccioná esta oferta</a></span>
-                            </div>
-                        </div>
-<!-- MenuSlide -->
-                        <div class="menu">
-                            <ul class="menu_slider">
-                                <li>
-                                    <a href="#slide1" class="btn_img"></a>
-                                </li>
-                                <li>
-                                    <a href="#slide2" class="btn_img"></a>
-                                </li>
-                                <li>
-                                    <a href="#slide3" class="btn_img"></a>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
-            </div>    
-                
-            
-            
-            
-<!-- Slide TWEETS -->
 
-                <div class="slider2_container">
-<!-- TWEETS -->
-                    <ul class="tweets">
-                        <li class="tweet" id="tweet1">
-                            <blockquote class="twitter-tweet" data-theme="dark"><p lang="es" dir="ltr">Es un placer volver a <a href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>, está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp (@lucaspuma32) <a href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="slider">
+            <div class="slider_container">
+                <!-- Slides -->
+                <ul class="slides">
+                    <li id="slide1">
+                        <img src="../public/images/imgs/plato6.jpg" alt="Oferta1">
+                    </li>
+                    <li id="slide2">
+                        <img src="../public/images/imgs/sushiman.jpg" alt="Oferta2">
+                    </li>
+                    <li id="slide3">
+                        <img src="../public/images/imgs/plato4.jpg" alt="Oferta3">
+                    </li>
+                </ul>
+                <!-- Texto central -->
+                <div class="text_container">
+                    <div class="texto">
+                        <span><a href="#" class="btn_img">Seleccioná esta oferta</a></span>
+                    </div>
+                </div>
+                <!-- MenuSlide -->
+                <div class="menu">
+                    <ul class="menu_slider">
+                        <li>
+                            <a href="#slide1" class="btn_img"></a>
                         </li>
-                        <li class="tweet" id="tweet2">
-                            <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Es un placer volver a <a href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>, está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp (@lucaspuma32) <a href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <li>
+                            <a href="#slide2" class="btn_img"></a>
                         </li>
-                        <li class="tweet" id="tweet3">
-                            <blockquote class="twitter-tweet" data-theme="dark"><p lang="es" dir="ltr">Es un placer volver a <a href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>, está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp (@lucaspuma32) <a href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <li>
+                            <a href="#slide3" class="btn_img"></a>
                         </li>
                     </ul>
-                    
-                    <div class="menu_tweets">
-                        <ul class="btns">
-                            <li>
-                                <a href="#tweet1" class="btn_slide"></a>
-                            </li>
-                        
-                            <li>
-                                <a href="#tweet2" class="btn_slide"></a>
-                            </li>
-                        
-                            <li>
-                                <a href="#tweet3" class="btn_slide"></a>
-                            </li>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Slide TWEETS -->
+
+        <div class="slider2_container">
+            <!-- TWEETS -->
+            <ul class="tweets">
+                <li class="tweet" id="tweet1">
+                    <blockquote class="twitter-tweet" data-theme="dark">
+                        <p lang="es" dir="ltr">Es un placer volver a <a
+                                href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>,
+                            está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp
+                        (@lucaspuma32) <a
+                            href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March
+                            14, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </li>
+                <li class="tweet" id="tweet2">
+                    <blockquote class="twitter-tweet">
+                        <p lang="es" dir="ltr">Es un placer volver a <a
+                                href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>,
+                            está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp
+                        (@lucaspuma32) <a
+                            href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March
+                            14, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </li>
+                <li class="tweet" id="tweet3">
+                    <blockquote class="twitter-tweet" data-theme="dark">
+                        <p lang="es" dir="ltr">Es un placer volver a <a
+                                href="https://twitter.com/hashtag/RestoSushi?src=hash&amp;ref_src=twsrc%5Etfw">#RestoSushi</a>,
+                            está vez junto a la empresa, aprovechando el increíble espacio para eventos.</p>&mdash; Lp
+                        (@lucaspuma32) <a
+                            href="https://twitter.com/lucaspuma32/status/1503443505355448325?ref_src=twsrc%5Etfw">March
+                            14, 2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </li>
+            </ul>
+
+            <div class="menu_tweets">
+                <ul class="btns">
+                    <li>
+                        <a href="#tweet1" class="btn_slide"></a>
+                    </li>
+
+                    <li>
+                        <a href="#tweet2" class="btn_slide"></a>
+                    </li>
+
+                    <li>
+                        <a href="#tweet3" class="btn_slide"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ubicacion">
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39859.10929096426!2d-58.45177432092184!3d-34.56980214573151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1647456922009!5m2!1ses-419!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+
+        <!-- WSP ICON -->
+        <div class="wsp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>EMPRESA</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>AYUDA</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Medios de pago</a></li>
+                        <li><a href="#">Estado de mi pedido</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PEDIR ONLINE</h4>
+                    <ul>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Take away</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Hace tu pedido!</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> SEGUINOS</h4>
+                    <div class="redes-sociales-footer">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
-                    
-                </div> 
-                
-                <div class="ubicacion">
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39859.10929096426!2d-58.45177432092184!3d-34.56980214573151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1647456922009!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div> 
-                
-                
-                
-                <!-- WSP ICON -->
-                <div class="wsp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div> 
-                
-            </main>
-           
-            <!-- FOOTER -->
-
-     <footer class="footer"> 
-    <div class="container-footer">
-    <div class="row-footer">
-    <div class="footer-col">
-        <h4>EMPRESA</h4>
-        <ul>
-            <li><a href="#">Acerca de nosotros</a></li>
-            <li><a href="#">Politicas de privacidad</a></li>
-            <li><a href="#">Nuestros servicios</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4>AYUDA</h4>
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Medios de pago</a></li>
-            <li><a href="#">Estado de mi pedido</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4>PEDIR ONLINE</h4>
-        <ul>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Take away</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Hace tu pedido!</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4> SEGUINOS</h4>
-        <div class="redes-sociales-footer">       
-         <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
-    </div>
-    </div>
-    </div>
-    </div> 
+                </div>
+            </div>
+        </div>
 
 
 </body>
+
 </html>

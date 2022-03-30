@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="shortcut icon" href="../public/images/Logo/Recurso 12.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c8e7f3706a.js" crossorigin="anonymous"></script>
     <link href="/public/css/login-register.css" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/c8e7f3706a.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://kit.fontawesome.com/45870a9a9c.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/public/images/imgs/Recurso 12.png" type="image/x-icon">
-    <title>Formulario Login</title>
+    <title>Resto Sushi</title>
 </head>
-<body>
 
-    
+<body>
+    <!-- HEADER -->
     <header class="header-container-gral">
         <div class="header-container">
             <!-- LOGO -->
             <div class="header-container-logo">
-                <img src="/public/images/imgs/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
+                <img src="../public/images/Logo/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
             </div>
             <!-- BUSCADOR -->
             <div class="header-container-search">
@@ -33,9 +29,9 @@
             </div>
             <!-- MENU DE NAVEGACION -->
             <nav class="header-container-nav">
-  
+
                 <label for="check" class="nav-label">
-                    <img src="/public/images/imgs/bars.svg" alt="bar" class="btn-nav-bars">
+                    <img src="../public/images/icons/bars.svg" alt="bar" class="btn-nav-bars">
                 </label>
                 <input type="checkbox" id="check" class="check-input">
                 <div class="nav-menu-link">
@@ -43,22 +39,46 @@
                     <a href="#" class="nav-link">MENU</a>
                     <a href="#" class="nav-link">MENU</a>
                 </div>
-  
+
             </nav>
             <!-- CARRITO DE COMPRAS -->
             <div class="header-container-shopping">
-                <img src="/public/images/imgs/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
+                <img src="../public/images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
             </div>
             <!-- AVATAR -->
             <div class="header-container-avatar">
-                <img src="/public/images/imgs/avatarSushi.jpg" alt="avatar" class="img-avatar">
+                <img src="../public/images/icons/avatarSushi.jpg" alt="avatar" class="img-avatar">
                 <div class="avatar-state">
-  
+
                 </div>
             </div>
         </div>
     </header>
-                               
+    <!-- END HEADER -->
+
+
+
+
+
+
+
+
+    <form class="formulario">
+        <h1 class="titulo-formulario">Inicia Sesion</h1>
+        <div class="contenedor-formulario">
+            <div class="input-contenedor">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Correo Electronico">
+            </div>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" value="Login" class="button">
+            <p class="texto-formulario">¿No tienes cuenta? <a class="link-formulario"
+                    href="/views/registro.html">Registrate</a></p>
+        </div>
+    </form>
 
 
 
@@ -68,74 +88,51 @@
 
 
 
-<form class="formulario">
-    <h1 class="titulo-formulario">Inicia Sesion</h1>
-    <div class="contenedor-formulario">
-    <div class="input-contenedor">
-        <i class="fa-solid fa-envelope"></i>
-        <input type="email" placeholder="Correo Electronico">
-    </div>
-    <div class="input-contenedor">
-        <i class="fa-solid fa-key"></i>
-        <input type="password" placeholder="Contraseña">
-    </div>
-    <input type="submit" value="Login" class="button">
-    <p class="texto-formulario">¿No tienes cuenta? <a class="link-formulario" href="/views/registro.html">Registrate</a></p>
-    </div>
-</form>
 
 
 
 
-
-
-
-
-
-
-
-
-
-<footer class="footer"> 
-    <div class="container-footer">
-    <div class="row-footer">
-    <div class="footer-col">
-        <h4>EMPRESA</h4>
-        <ul>
-            <li><a href="#">Acerca de nosotros</a></li>
-            <li><a href="#">Politicas de privacidad</a></li>
-            <li><a href="#">Nuestros servicios</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4>AYUDA</h4>
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Medios de pago</a></li>
-            <li><a href="#">Estado de mi pedido</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4>PEDIR ONLINE</h4>
-        <ul>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Take away</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Hace tu pedido!</a></li>
-        </ul>
-    </div>
-    <div class="footer-col">
-        <h4> SEGUINOS</h4>
-        <div class="redes-sociales-footer">       
-         <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
-    </div>
-    </div>
-    </div>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>EMPRESA</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>AYUDA</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Medios de pago</a></li>
+                        <li><a href="#">Estado de mi pedido</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PEDIR ONLINE</h4>
+                    <ul>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Take away</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Hace tu pedido!</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> SEGUINOS</h4>
+                    <div class="redes-sociales-footer">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-</html> 
+
+</html>
