@@ -252,7 +252,7 @@ body {
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(/public/images/imgs/fondo.jpg);
+    background-image: url("../images/imgs/fondo.jpg");
     background-size: cover;
     background-attachment:fixed;
 }
