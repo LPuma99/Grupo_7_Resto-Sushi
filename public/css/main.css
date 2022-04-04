@@ -1,7 +1,12 @@
+body{
+    background-image: url("../images/imgs/fondo.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 main{
     width: 100%;
-    position: relative;
-    
+    position: relative;   
 }
 
 /* SLIDER */
@@ -20,9 +25,9 @@ main{
     transition: opacity .5s;
 }
 
-.slider .slider_container .slides li img {
+.slider_container .slides li img {
+    height:87vh; 
     width: 100%;
-    height:85vh;
     object-fit: cover;
 }
 
@@ -201,14 +206,14 @@ ul.menu_slider li a{
     
     ul.menu_slider{
         position: absolute;
-        top: 43vh;
+        top: 45vh;
     }
     
     /* Slider Tweet */
 
     .tweets li{
         width: 350px;
-        top: 95vh;
+        top: 100vh;
     }
 
     /* Menu Slider Tweet */
@@ -216,7 +221,7 @@ ul.menu_slider li a{
         display: inline-block;
         text-align: center;
         position: absolute;
-        top: 105vh;
+        top: 110vh;
     } 
 
     /* Mapa */
@@ -242,7 +247,7 @@ ul.menu_slider li a{
 @media (min-width:1024px){
     .slider .slider_container .slides li img {
         width: 100vw;
-        height:85vh;
+        height:87vh;
         object-fit: cover;
     }
 
@@ -279,7 +284,7 @@ ul.menu_slider li a{
 
     .ubicacion{
         position: absolute;
-        top: 160vh;
+        top: 150vh;
         left: 50%;
         transform: translate(-50%,-50%);
         padding: 10px;

@@ -12,7 +12,7 @@ body {
 /* HEADER */
 .header-container-gral {
   background-color: #1d1c1b;
-  height: 100px;
+  height: 13vh; /* -Lucas- Aca Cambie la medida para poder adaptar el resto de la pag */
   width: 100%;
 }
 .header-container {
