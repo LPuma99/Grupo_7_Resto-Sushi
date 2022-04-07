@@ -1,9 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Roboto&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Roboto&display=swap');
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
