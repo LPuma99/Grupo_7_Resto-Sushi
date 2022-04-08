@@ -1,184 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <link rel="shortcut icon" href="/images/Logo/Recurso 12.png" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="https://kit.fontawesome.com/45870a9a9c.js" crossorigin="anonymous"></script>
-  <title>Resto Sushi</title>
-</head>
+<%- include('../partials/head.ejs') %>
+
 
 <body>
-  <!-- HEADER -->
-  <header class="header-container-gral">
-    <div class="header-container">
-      <!-- LOGO -->
-      <div class="header-container-logo">
-        <img src="/images/Logo/Recurso 12.png" width="150px" alt="Logo" class="img-logo">
-      </div>
-      <!-- BUSCADOR -->
-      <div class="header-container-search">
-        <form autocomplete="of" class="form-search">
-          <div class="div-input">
-            <input type="text" name="search" placeholder="BUSCAR" class="input-search">
-          </div>
-        </form>
-      </div>
-      <!-- MENU DE NAVEGACION -->
-      <nav class="header-container-nav">
+    <%- include('../partials/header.ejs') %>
+    
 
-        <label for="check" class="nav-label">
-          <img src="/images/icons/bars.svg" alt="bar" class="btn-nav-bars">
-        </label>
-        <input type="checkbox" id="check" class="check-input">
-        <div class="nav-menu-link">
-          <a href="#" class="nav-link">MENU</a>
-          <a href="#" class="nav-link">MENU</a>
-          <a href="#" class="nav-link">MENU</a>
-          <!-- CARRITO DE COMPRAS PHONE -->
-          <div class="header-container-shopping-phone">
-            <img src="/images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
-          </div>
 
+    <h1>MI PEDIDO</h1>
+
+    <main class="carrito-compra">
+      <div class="contenedor">
+        <div class="detalle-pedido">
+          <section>
+            <div class="info-pedido">
+              <p>Producto</p>
+              <p>Precio</p>
+              <p>Cantidad</p>
+              <p>Subtotal</p>
+            </div>
+            <hr>
+            <div class="productos-carrito">
+              <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
+              <p>Nigiri</p>
+              <p>$245</p>
+              <p>3</p>
+              <p>735</p>
+            </div>
+            <hr>
+            <div class="productos-carrito">
+              <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg"></img>
+              <p>Nigiri</p>
+              <p>$245</p>
+              <p>3</p>
+              <p>735</p>
+            </div>
+            <hr>
+            <div class="productos-carrito">
+              <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
+              <p>Nigiri</p>
+              <p>$245</p>
+              <p>3</p>
+              <p>735</p>
+            </div>
+            <hr>
+            <div class="productos-carrito">
+              <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
+              <p>Nigiri</p>
+              <p>$245</p>
+              <p>3</p>
+              <p>735</p>
+            </div>
+
+          </section>
+          <div class="botones">
+            <button>
+              <p>Vaciar Carrito</p>
+            </button>
+            <button>
+              <p>Seguir comprando</p>
+            </button>
+          </div>
         </div>
 
-      </nav>
-      <!-- CARRITO DE COMPRAS DESKTOP -->
-      <div class="header-container-shopping-desktop">
-        <img src="images/icons/carrito-de-compras.png" class="img-shopping" alt=" shopping cart">
-      </div>
-      <!-- AVATAR -->
-      <div class="header-container-avatar">
-        <img src="/images/icons/avatarSushi.jpg" alt="avatar" class="img-avatar">
-        <div class="avatar-state">
-
+        <div class="detalle-subtotal">
+          <section class="subtotal">
+            <div class="subtotal-info">
+              <h2>MI COMPRA</h2>
+              <p>Descuentos Aplicados: $XXX,XX</p>
+              <p class="precio-final">SUBTOTAL: $XXX,XX</p>
+              <button class="boton">Ir a Pagar</button>
+            </div>
+          </section>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- END HEADER -->
+    </main>
 
-
-
-  <h1>MI PEDIDO</h1>
-
-  <main class="carrito-compra">
-    <div class="contenedor">
-      <div class="detalle-pedido">
-        <section>
-          <div class="info-pedido">
-            <p>Producto</p>
-            <p>Precio</p>
-            <p>Cantidad</p>
-            <p>Subtotal</p>
-          </div>
-          <hr>
-          <div class="productos-carrito">
-            <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
-            <p>Nigiri</p>
-            <p>$245</p>
-            <p>3</p>
-            <p>735</p>
-          </div>
-          <hr>
-          <div class="productos-carrito">
-            <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg"></img>
-            <p>Nigiri</p>
-            <p>$245</p>
-            <p>3</p>
-            <p>735</p>
-          </div>
-          <hr>
-          <div class="productos-carrito">
-            <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
-            <p>Nigiri</p>
-            <p>$245</p>
-            <p>3</p>
-            <p>735</p>
-          </div>
-          <hr>
-          <div class="productos-carrito">
-            <img src="https://www.cucinare.tv/wp-content/uploads/2020/10/Nigiri.jpg">
-            <p>Nigiri</p>
-            <p>$245</p>
-            <p>3</p>
-            <p>735</p>
-          </div>
-
-        </section>
-        <div class="botones">
-          <button>
-            <p>Vaciar Carrito</p>
-          </button>
-          <button>
-            <p>Seguir comprando</p>
-          </button>
-        </div>
-      </div>
-
-      <div class="detalle-subtotal">
-        <section class="subtotal">
-          <div class="subtotal-info">
-            <h2>MI COMPRA</h2>
-            <p>Descuentos Aplicados: $XXX,XX</p>
-            <p class="precio-final">SUBTOTAL: $XXX,XX</p>
-            <button class="boton">Ir a Pagar</button>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container-footer">
-      <div class="row-footer">
-        <div class="footer-col">
-          <h4>EMPRESA</h4>
-          <ul>
-            <li><a href="#">Acerca de nosotros</a></li>
-            <li><a href="#">Politicas de privacidad</a></li>
-            <li><a href="#">Nuestros servicios</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>AYUDA</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Medios de pago</a></li>
-            <li><a href="#">Estado de mi pedido</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>PEDIR ONLINE</h4>
-          <ul>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Take away</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Hace tu pedido!</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>SEGUINOS</h4>
-          <div class="redes-sociales-footer">
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>EMPRESA</h4>
             <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
+              <li><a href="#">Acerca de nosotros</a></li>
+              <li><a href="#">Politicas de privacidad</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
             </ul>
           </div>
+          <div class="footer-col">
+            <h4>AYUDA</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Medios de pago</a></li>
+              <li><a href="#">Estado de mi pedido</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>PEDIR ONLINE</h4>
+            <ul>
+              <li><a href="#">Sucursales</a></li>
+              <li><a href="#">Take away</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Hace tu pedido!</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>SEGUINOS</h4>
+            <div class="redes-sociales-footer">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 
 </html>
