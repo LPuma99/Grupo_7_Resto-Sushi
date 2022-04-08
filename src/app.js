@@ -10,9 +10,10 @@ const userRouter = require('./router/userRouter')
 
 /* View config */
 app.set('view engine', 'ejs')
-app.set('views', 'src/views/users')
+/* app.set('views', 'src/views') */
 
 app.use(express.static(path.join(__dirname, '../public')));
+app.set('views', path.join(__dirname, 'views'))
 
 
 

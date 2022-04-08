@@ -3,10 +3,10 @@ module.exports = {
         res.send ('Futura Carta del resto')
     } ,
     product: (req, res)=> {
-        res.render('productDetail')
+        res.render('products/productDetail')
     } ,
     carrito: (req, res) => {
-        res.render('carrito-compra')
+        res.render('products/carrito-compra')
     }
 
 }
