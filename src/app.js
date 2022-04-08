@@ -14,8 +14,7 @@ app.set('views', 'src/views/users')
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-/* app.use(express.static("public"))
-app.use("/style", express.static(__dirname + '../public/')) */
+
 
 app.use('/', indexRouter)
 app.use('/productos' , productRouter) /* Lista, detalle de producto */
