@@ -100,7 +100,7 @@ ul.menu_slider li a {
   position: absolute;
   width: 300px;
   height: 200px;
-  top: 100vh;
+  top: 105vh;
   left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -132,7 +132,7 @@ ul.menu_slider li a {
 .menu_tweets ul.btns {
   position: absolute;
   z-index: 10;
-  top: 115vh;
+  top: 130vh;
   display: inline-block;
   text-align: center;
   /* left: 50%;
@@ -154,7 +154,7 @@ ul.menu_slider li a {
 .ubicacion {
   width: auto;
   position: absolute;
-  top: 150vh;
+  top: 165vh;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
@@ -216,13 +216,13 @@ ul.menu_slider li a {
     display: inline-block;
     text-align: center;
     position: absolute;
-    top: 110vh;
+    top: 118vh;
   }
 
   /* Mapa */
   .ubicacion {
     position: absolute;
-    top: 135vh;
+    top: 150vh; 
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -262,7 +262,7 @@ ul.menu_slider li a {
   }
 
   .menu_tweets ul.btns {
-    top: 120vh;
+    top: 135vh;
   }
   .btn_slide {
     padding: 15px;
@@ -271,7 +271,7 @@ ul.menu_slider li a {
 
   .ubicacion {
     position: absolute;
-    top: 150vh;
+    top: 180vh;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
