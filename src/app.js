@@ -1,26 +1,33 @@
-const express = require("express") 
-const app = express() 
-const path = require("path")
-const PORT = 3000
+const express = require('express');
+const app = express();
+const path = require('path');
+const process = require('process');
+require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+const methodOverride = require('method-override');
 
 /* Enrutadores */
-const indexRouter = require ('./router/indexRouter')
-const productRouter = require ('./router/productRouter')
-const userRouter = require('./router/userRouter')
-
-/* View config */
-app.set('view engine', 'ejs')
-/* app.set('views', 'src/views') */
+const indexRouter = require('./router/indexRouter');
+const productsRouter = require('./router/productRouter');
+const usersRouter = require('./router/userRouter');
+const adminRouter = require('./router/adminRouter');
 
 app.use(express.static(path.join(__dirname, '../public')));
-app.set('views', path.join(__dirname, 'views'))
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+app.use(methodOverride('_method'));
 
+/* Views config */
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, "views"));
 
+/* Middlewares de Rutas */
+app.use('/', indexRouter); // HOME - Contact 
+app.use('/productos', productsRouter); // Listado, detalle
+app.use('/usuarios', usersRouter); //Login, registro, perfil
+app.use('/admin', adminRouter); // Admin, ABM Productos, ABM Projectos
 
-app.use('/', indexRouter)
-app.use('/productos' , productRouter) /* Lista, detalle de producto */
-app.use('/user', userRouter)/* Login, Register */
-
-
-app.listen(PORT, () => console.log(`Servidor listen port ${PORT}
-http://localhost:${PORT }`));
+app.listen(PORT, () => console.log(`
+Server listen port ${PORT}
+http://localhost:${PORT}
+`));
