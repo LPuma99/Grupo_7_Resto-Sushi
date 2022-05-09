@@ -7,22 +7,26 @@
     <body>
         <%- include('../partials/header.ejs') %>
 
-            <form class="formulario">
+            <form class="formulario" action="/usuarios/registro/" method="post">
                 <h1 class="titulo-formulario">Registrate</h1>
                 <div class="contenedor-formulario">
                     <div class="input-contenedor">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Nombre Completo">
                     </div>
+                    <span class="text-danger">Debe llenar este campo para registrarse </span>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" placeholder="Correo Electronico">
                     </div>
+                    <span class="text-danger">Debe llenar este campo para registrarse</span>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-key"></i>
                         <input type="password" placeholder="Contraseña">
                     </div>
-                    <input type="submit" value="Registrate" class="button">
+                    <span class="text-danger">Debe llenar este campo para registrarse</span>
+                    <button class="button" type="submit">Registrarme</button>
+                    <!-- <input type="submit" value="Registrate" class="button"> -->
                     <p class="texto-formulario">Al registrarte aceptas las Condiciones de uso y las Politicas de
                         privacidad
                     </p>

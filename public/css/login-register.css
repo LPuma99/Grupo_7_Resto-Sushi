@@ -77,6 +77,10 @@ input{
     color: cadetblue;
 }
 
+.text-danger{
+    color: red;
+}
+
 @media(min-width:768px){
     .formulario{
         margin: auto;

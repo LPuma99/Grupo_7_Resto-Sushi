@@ -1,5 +1,13 @@
 [
     {
+        "id" : 0,
+        "nombre-usuario" : "RodRodriguez",
+        "nombre": "Rodrigo",
+        "apellido" : "Rodriguez",
+        "email" : "rodrigo_rodriguez@hotmail.com",
+        "contraseña" : "contraseña4"
+    },
+    {
         "id" : 1,
         "nombre-usuario" : "Lpuma",
         "nombre": "Lucas",
@@ -22,13 +30,5 @@
         "apellido" : "Claure",
         "email" : "danielclaure@hotmail.com",
         "contraseña" : "contraseña3"
-    },
-    {
-        "id" : 4,
-        "nombre-usuario" : "RodRodriguez",
-        "nombre": "Rodrigo",
-        "apellido" : "Rodriguez",
-        "email" : "rodrigo_rodriguez@hotmail.com",
-        "contraseña" : "contraseña4"
     }
 ]
