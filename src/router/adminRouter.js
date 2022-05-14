@@ -3,8 +3,10 @@ const router = express.Router();
 const adminController = require('../controllers/admin/adminController');
 const adminProductsController = require('../controllers/admin/adminProductsController');
 const uploadFile = require('../middlewares/uploadProductImage');
+const userSessionCheck = require('../middlewares/userSessionCheck');
+const adminCheck = require('../middlewares/adminCheck');
 
-router.get('/', adminController.index);
+router.get('/', userSessionCheck, adminCheck, adminController.index);
 
 
 /* GET - Lista de productos */

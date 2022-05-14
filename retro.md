@@ -24,3 +24,24 @@
 	-Dejar de jerarquizar el grupo.
 	-No discutir por whatsapp.
 	-Dejar de reunirnos por inercia.
+
+
+RETROSPECTIVA DE 5to SPRINT
+
+### Seguir Haciendo:
+	-Ser compañeros
+
+### Hacer mas:
+	-Reuniones productivas y eficientes.
+	-Reuniones solidas sobre temas específicos.
+	-Dailys para mantener a todos al tanto
+
+
+### Empezar a hacer:
+	-Reuniones inmediatas una vez anunciada el sprint
+	-Comunicarse con los demas sobre cualquier inconveniente
+
+### Dejar de hacer:
+	-Procrastinar 		
+	-Postergar reuniones
+	-No comunicar lo que cada uno esta haciendo

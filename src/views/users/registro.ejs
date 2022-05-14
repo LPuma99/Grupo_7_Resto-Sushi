@@ -7,27 +7,39 @@
     <body>
         <%- include('../partials/header.ejs') %>
 
-            <form class="formulario">
+            <form class="formulario" action="/usuarios/registro" method="post" enctype="multipart/form-data">
                 <h1 class="titulo-formulario">Registrate</h1>
                 <div class="contenedor-formulario">
                     <div class="input-contenedor">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text"  name= "name" placeholder="Nombre Completo">
+                        <% if (locals.errors && errors.name) { %>
+                            <small class="text-danger"><%= errors.name.msg %></small>
+                        <% } %>
                     </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Correo Electronico">
+                        <input type="email" name= "email" placeholder="Correo Electronico">
+                        <% if (locals.errors && errors.email) { %>
+                            <small class="text-danger"><%= errors.email.msg %></small>
+                        <% } %>
                     </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-key"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" name= "password" placeholder="Contraseña">
+                        <% if (locals.errors && errors.password) { %>
+                            <small class="text-danger"><%= errors.password.msg %></small>
+                        <% } %>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="file" name="avatar" id="avatar" >
                     </div>
                     <input type="submit" value="Registrate" class="button">
                     <p class="texto-formulario">Al registrarte aceptas las Condiciones de uso y las Politicas de
                         privacidad
                     </p>
                     <p class="texto-formulario">¿Ya tienes cuenta? <a class="link-formulario"
-                            href="../views/login.html">Iniciar
+                            href="http://localhost:3000/usuarios/login">Iniciar
                             Sesion</a></p>
                 </div>
             </form>

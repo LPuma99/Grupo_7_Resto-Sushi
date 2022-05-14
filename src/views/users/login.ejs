@@ -7,20 +7,27 @@
 
         <%- include('../partials/header.ejs') %>
 
-            <form class="formulario">
+            <form class="formulario" action="/usuarios/login" method="POST">
                 <h1 class="titulo-formulario">Inicia Sesion</h1>
                 <div class="contenedor-formulario">
                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Correo Electronico">
+                        <input type="email" name= "email" placeholder="Correo Electronico">
+                        <% if (locals.errors && errors.email) { %>
+                            <small class="text-danger"><%= errors.email.msg %></small>
+                        <% } %>
                     </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-key"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" name= "password" placeholder="Contraseña">
+                        <% if (locals.errors && errors.password) { %>
+                            <small class="text-danger"><%= errors.password.msg %></small>
+                        <% } %>
                     </div>
+                    
                     <input type="submit" value="Login" class="button">
                     <p class="texto-formulario">¿No tienes cuenta? <a class="link-formulario"
-                            href="../views/registro.html">Registrate</a></p>
+                            href="http://localhost:3000/usuarios/registro">Registrate</a></p>
                 </div>
             </form>
 
