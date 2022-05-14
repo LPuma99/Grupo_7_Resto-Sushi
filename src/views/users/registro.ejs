@@ -7,7 +7,11 @@
     <body>
         <%- include('../partials/header.ejs') %>
 
+<<<<<<< HEAD
             <form class="formulario" action="/usuarios/registro" method="post" enctype="multipart/form-data">
+=======
+            <form action="/usuarios/registro" method="post" enctype="multipart/form-data">
+>>>>>>> 065535912579cbc4d212a19649674ebc11530b63
                 <h1 class="titulo-formulario">Registrate</h1>
                 <div class="contenedor-formulario">
                     <div class="input-contenedor">
@@ -17,12 +21,17 @@
                             <small class="text-danger"><%= errors.name.msg %></small>
                         <% } %>
                     </div>
+                    <span class="text-danger">Debe llenar este campo para registrarse </span>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" name= "email" placeholder="Correo Electronico">
                         <% if (locals.errors && errors.email) { %>
                             <small class="text-danger"><%= errors.email.msg %></small>
                         <% } %>
+                    </div>
+                    <span class="text-danger">Debe llenar este campo para registrarse</span>
+                    <div class="input-contenedor">
+                        <input type="file" name="avatar" id="avatar" >
                     </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-key"></i>
@@ -34,7 +43,9 @@
                     <div class="input-contenedor">
                         <input type="file" name="avatar" id="avatar" >
                     </div>
-                    <input type="submit" value="Registrate" class="button">
+                    <span class="text-danger">Debe llenar este campo para registrarse</span>
+                    <button class="button" type="submit">Registrarme</button>
+                    <!-- <input type="submit" value="Registrate" class="button"> -->
                     <p class="texto-formulario">Al registrarte aceptas las Condiciones de uso y las Politicas de
                         privacidad
                     </p>

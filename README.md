@@ -10,17 +10,15 @@
 
     Si bien no hay acepción de personas, como Casa de Sushi buscamos atraer a todos aquellos que aún no conocen, ni probaron el Sushi como tal, un plato lleno de sabores y cultura.
 
-### Quienes integramos el equipo de Resto Sushi?
+### ¿Quienes integramos el equipo de Resto Sushi?
 
-Somos 4 socios, entusiasmados por lanzar nuestro proyecto:
+Somos 3 socios, entusiasmados por lanzar nuestro proyecto:
 
 Lucas Puma: 22 años, Técnico Electrónico, estudiante de programación, padre, esposo, amante de la innovación y de crear soluciones.
 
 Rodrigo Rodríguez: 21 años, Estudiante de programación, disfruta mucho de entrenar, y jugar video juegos.
 
 Américo Ortega: 33 años, apasionado por los desafíos que lo lleven mas allá de su zona de confort e incluso lo animen a seguir aprendiendo.
-
-Daniel Claure: 39 años, instalador electricista independiente, innovador, emprendedor y gran promotor del trabajo ordenado
 
 ### Eccomerce que usamos de referencia.
 

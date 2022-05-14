@@ -15,7 +15,7 @@ body{
 
 
 
-.formulario{
+form{
     background: #ffffff;
     margin-top: 150px;
     margin: auto;
@@ -75,6 +75,10 @@ input{
 
 .link-formulario:hover{
     color: cadetblue;
+}
+
+.text-danger{
+    color: red;
 }
 
 @media(min-width:768px){
