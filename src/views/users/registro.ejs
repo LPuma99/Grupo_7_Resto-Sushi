@@ -7,7 +7,7 @@
     <body>
         <%- include('../partials/header.ejs') %>
 
-            <form class="formulario" action="/usuarios/registro/" method="post">
+            <form action="/usuarios/registro" method="post" enctype="multipart/form-data">
                 <h1 class="titulo-formulario">Registrate</h1>
                 <div class="contenedor-formulario">
                     <div class="input-contenedor">
@@ -20,6 +20,9 @@
                         <input type="email" placeholder="Correo Electronico">
                     </div>
                     <span class="text-danger">Debe llenar este campo para registrarse</span>
+                    <div class="input-contenedor">
+                        <input type="file" name="avatar" id="avatar" >
+                    </div>
                     <div class="input-contenedor">
                         <i class="fa-solid fa-key"></i>
                         <input type="password" placeholder="Contraseña">
