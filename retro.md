@@ -63,8 +63,7 @@
 
 RETROSPECTIVA DE 5to SPRINT
 
-### Seguir Haciendo:
-	-Ser compañeros
+
 
 ### Hacer mas:
 	-Reuniones productivas y eficientes.
@@ -80,6 +79,5 @@ RETROSPECTIVA DE 5to SPRINT
 	-Procrastinar 		
 	-Postergar reuniones
 	-No comunicar lo que cada uno esta haciendo
-=======
-	-Trabajar consignas del sprint anterior recien cuando se lanza el nuevo sprint.
->>>>>>> 065535912579cbc4d212a19649674ebc11530b63
+
+
