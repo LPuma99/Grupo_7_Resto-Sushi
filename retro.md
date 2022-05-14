@@ -55,7 +55,6 @@
 	-Procastinación.
 
 ### Dejar de hacer:
-<<<<<<< HEAD
 	-Dejar de jerarquizar el grupo.
 	-No discutir por whatsapp.
 	-Dejar de reunirnos por inercia.
@@ -63,7 +62,9 @@
 
 RETROSPECTIVA DE 5to SPRINT
 
-
+### Seguir Haciendo:
+	-Trabajar a pesar de la dificultades
+	-Poder entregar el sprint en tiempo y forma
 
 ### Hacer mas:
 	-Reuniones productivas y eficientes.
