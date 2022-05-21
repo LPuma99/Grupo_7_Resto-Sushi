@@ -102,10 +102,16 @@ ul{
  */
 
 /* Footer lucas */
+ 
+body {
+  background-image: url("../images/imgs/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 footer {
   position: absolute;
-  bottom: -175vh;
+ 
   width: 100%;
   height: 40%;
 }
@@ -187,14 +193,17 @@ ul {
   transition: all 0.5s ease;
 }
 
+
 .footer-col .redes-sociales-footer a:hover {
   color: #24262b;
   background-color: #ffffff;
 }
 
+
+
 @media (min-width: 768px) {
   footer {
-    bottom: -115vh;
+    bottom: -40vh;
   }
 }
 
@@ -210,6 +219,6 @@ ul {
 
 @media (min-width: 1024px) {
   footer {
-    bottom: -130vh;
+    bottom: -25vh;
   }
 }

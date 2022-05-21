@@ -3,7 +3,28 @@
 <%- include('../partials/head.ejs') %>
 
     <body>
+        <style>
+            footer{
+                bottom: -150vh;
+            }
+            @media (max-width: 767px) {
+            footer{
+                bottom: -170vh;
+            }
+            }
+            @media (min-width: 768px) {
+            footer{
+                bottom: -120vh;
+            }
+            
+            }
+            @media (min-width: 960px) {
+            footer{
+                bottom: -150vh;
+            }
 
+            }
+        </style>
         <%- include('../partials/header.ejs') %>
             <!-- INICIO -->
             <main>
