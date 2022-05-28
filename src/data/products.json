@@ -1,1 +1,82 @@
-[{"name":"Maki","price":"250","discount":"","categoryId":"1","stock":true,"description":"Es un rollo de alga nori relleno de arroz y distintos ingredientes como pescado, marisco, frutas o verduras.","id":2,"image":"default-image.png"},{"name":"Temaki","price":"400","discount":"","categoryId":"1","stock":true,"description":"Son unas piezas de sushi con forma de cono de alga nori rellenas de arroz y diferentes ingredientes.","id":3,"image":"default-image.png"},{"name":"Inari","price":"330","discount":"","categoryId":"Categoría","stock":true,"description":"Es como una especie de rollito de primavera de tofu frito con arroz aromatizado y/o verduras.","id":4,"image":"default-image.png"},{"name":"Gunkan","price":"340","discount":"","categoryId":"1","stock":true,"description":"Es arroz envuelto en una tira gruesa de alga nori hasta formar una especie de cuenco, normalmente relleno por encima de huevas de pescado.","id":5,"image":"default-image.png"},{"name":"Uramaki","price":"360","discount":"","categoryId":"Categoría","stock":true,"description":"Es un rollo de arroz relleno de nalga nori y distintos ingredientes como pescado, marisco, frutas o verduras","id":6,"image":"default-image.png"},{"name":"Ensalada Salmon","price":"700","discount":"","categoryId":"2","description":"Ensalada de Salmon con arroz palta y tomate","id":7,"image":"default-image.png","stock":false},{"name":"Ensalada Teriyaki","price":"890","discount":"","categoryId":"2","stock":true,"description":"Ensalada con pollo teriyaki y ricas verduras","id":8,"image":"default-image.png"},{"name":"Ensalada Cesar","price":"600","discount":"","categoryId":"Categoría","description":"Ensalada cesar de alta calidad","id":9,"image":"default-image.png","stock":true}]
+[
+    {
+        "name": "Maki",
+        "price": "250",
+        "discount": "",
+        "categoryId": "1",
+        "stock": true,
+        "description": "Es un rollo de alga nori relleno de arroz y distintos ingredientes como pescado, marisco, frutas o verduras.",
+        "id": 2,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Temaki",
+        "price": "400",
+        "discount": "",
+        "categoryId": "1",
+        "stock": true,
+        "description": "Son unas piezas de sushi con forma de cono de alga nori rellenas de arroz y diferentes ingredientes.",
+        "id": 3,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Inari",
+        "price": "330",
+        "discount": "",
+        "categoryId": "Categoría",
+        "stock": true,
+        "description": "Es como una especie de rollito de primavera de tofu frito con arroz aromatizado y/o verduras.",
+        "id": 4,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Gunkan",
+        "price": "340",
+        "discount": "",
+        "categoryId": "1",
+        "stock": true,
+        "description": "Es arroz envuelto en una tira gruesa de alga nori hasta formar una especie de cuenco, normalmente relleno por encima de huevas de pescado.",
+        "id": 5,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Uramaki",
+        "price": "360",
+        "discount": "",
+        "categoryId": "Categoría",
+        "stock": true,
+        "description": "Es un rollo de arroz relleno de nalga nori y distintos ingredientes como pescado, marisco, frutas o verduras",
+        "id": 6,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Ensalada Salmon",
+        "price": "700",
+        "discount": "",
+        "categoryId": "2",
+        "description": "Ensalada de Salmon con arroz palta y tomate",
+        "id": 7,
+        "image": "default-image.png",
+        "stock": false
+    },
+    {
+        "name": "Ensalada Teriyaki",
+        "price": "890",
+        "discount": "",
+        "categoryId": "2",
+        "stock": true,
+        "description": "Ensalada con pollo teriyaki y ricas verduras",
+        "id": 8,
+        "image": "default-image.png"
+    },
+    {
+        "name": "Ensalada Cesar",
+        "price": "600",
+        "discount": "",
+        "categoryId": "Categoría",
+        "description": "Ensalada cesar de alta calidad",
+        "id": 9,
+        "image": "default-image.png",
+        "stock": true
+    }
+]
