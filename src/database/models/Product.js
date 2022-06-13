@@ -1,47 +1,54 @@
-module.exports = (sequelize, DataTypes) => {
-    let alias = "Product";
-    let cols = {
-     product_id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false,
+module.exports = (sequelize, dataTypes) => {
+  let alias = "Product";
+  let cols = {
+     id: {
+          type: dataTypes.INTEGER(11),
+          primaryKey: true,
+          autoIncrement: true,
+          allowNull: false,
       },
       name: {
-        type: DataTypes.STRING(15),
-        allowNull: false,
+          type: dataTypes.STRING(45),
+          allowNull: false,
       },
       price: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+          type: dataTypes.INTEGER(11),
+          allowNull: false,
       },
       discount: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
+          type: dataTypes.INTEGER(11),
       },
-      descripcion: {
-        type: DataTypes.STRING(99),
-        allowNull: true,
-      },
-      image: {
-        type: DataTypes.STRING(50),
-        allowNull: true,
+      category_id: {
+          type: dataTypes.INTEGER(11),
+          allowNull: false,
       },
       stock: {
-        type: DataTypes.tinyint(1),
-        allowNull: true,
+          type: dataTypes.BOOLEAN,
+          allowNull: false,
       },
-      categori_id: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
+      description: {
+          type: dataTypes.TEXT,
+          allowNull: false,
       },
-    };
-    let config = {
-      tableName: "products",
-      timestamp: true,
-    };
-  
-    const Product = sequelize.define(alias, cols, config);
-  
-    return Product;
-  };
+      image:{
+          type: dataTypes.STRING(200),
+          allowNull: false,
+      }
+  }
+  let config = {
+      tableName: "Product",
+      timestamps: false,
+  }
+
+  const Product = sequelize.define(alias, cols, config);
+
+/* 
+  Product.associate = (models) => {
+    Product.belongsTo(models.Category, {
+        as: "category",
+        foreignKey: "product_id"
+    })
+
+  } */
+  return Product;
+}

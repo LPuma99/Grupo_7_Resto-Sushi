@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
   let alias = "User";
   let cols = {
-    user_id: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
@@ -29,11 +29,20 @@ module.exports = (sequelize, DataTypes) => {
     },
   };
   let config = {
-    tableName: "users",
-    timestamp: true,
+    tableName: "User",
+    timestamp: false,
   };
 
   const User = sequelize.define(alias, cols, config);
+
+    /* User.associate = (models) => {
+    User.hasMany(models.Order, {
+        as: "Ordenes",
+        foreignKey: "user_id"
+    })
+}; */
+
+
 
   return User;
 };

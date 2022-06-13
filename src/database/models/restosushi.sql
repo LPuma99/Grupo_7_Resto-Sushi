@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `categories` (
-  `categories_id` int NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(15) NOT NULL,
-  PRIMARY KEY (`categories_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -46,11 +46,11 @@ DROP TABLE IF EXISTS `items_order`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `items_order` (
-  `itemsorder_id` int NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `cant` int NOT NULL,
   `orders_id` int DEFAULT NULL,
   `product_id` int DEFAULT NULL,
-  PRIMARY KEY (`itemsorder_id`),
+  PRIMARY KEY (`id`),
   KEY `orders_id` (`orders_id`),
   KEY `product_id` (`product_id`),
   CONSTRAINT `items_order_ibfk_1` FOREIGN KEY (`orders_id`) REFERENCES `orders` (`orders_id`),
@@ -75,7 +75,7 @@ DROP TABLE IF EXISTS `orders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `orders` (
-  `orders_id` int NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `estado` varchar(15) NOT NULL,
   `user_id` int NOT NULL,
   PRIMARY KEY (`orders_id`),
@@ -101,7 +101,7 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `products` (
-  `product_id` int NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(15) NOT NULL,
   `price` int NOT NULL,
   `discount` int DEFAULT NULL,
@@ -109,9 +109,9 @@ CREATE TABLE `products` (
   `image` varchar(50) DEFAULT NULL,
   `stock` tinyint(1) DEFAULT '1',
   `categori_id` int NOT NULL,
-  PRIMARY KEY (`product_id`),
-  KEY `categori_id` (`categori_id`),
-  CONSTRAINT `products_ibfk_1` FOREIGN KEY (`categori_id`) REFERENCES `categories` (`categories_id`)
+  PRIMARY KEY (`id`),
+  KEY `category_id` (`category_id`),
+  CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`categories_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -132,13 +132,13 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `user_id` int NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(15) NOT NULL,
   `email` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `avatar` varchar(20) NOT NULL,
   `rol` varchar(10) NOT NULL,
-  PRIMARY KEY (`user_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

@@ -1,103 +1,201 @@
-const { products, writeProducts } = require('../../data');
+const { validationResult } = require('express-validator');
+const db = require('../../database/models');
+const fs = require('fs');
+const path = require('path');
+
+
 
 module.exports = {
     /* Envia la vista de listado de productos */
     list: (req, res) => {
-        res.render('admin/products/listProducts', {
-            titulo: "Listado de productos",
-            productos: products
-        })
-    },
-    /* Envia la vista de formulario de creación de producto */
+        db.Product.findAll()
+        .then(product => {
+          res.render('admin/products/listProducts', {
+              titulo: "Productos"
+          })
+        } )
+      },
+   
+
+    /* Envia la vista de formulario de creación de emprendimiento */
     productAdd: (req, res) => {
-        res.render('admin/products/addProduct', {
-            titulo: "Agregar producto"
-        })
+        res.render('admin/products/addProduct', { titulo: "Agregar Producto"})
     },
-    /* Recibe los datos del form de creación y guarda el producto en la DB */
+
+
+    /* Recibe los datos del form de creación y guarda el emprendimiento en la DB */
     productCreate: (req, res) => {
-        /* 1 - Crear el objeto producto */
-        let lastId = 0;
-        products.forEach(product => {
-            if(product.id > lastId){
-                lastId = product.id;
-            }
-        });
-
-        let newProduct = {
-            ...req.body, 
-            id: lastId + 1,
-            image: req.file ? req.file.filename : "default-image.png",
-            stock: req.body.stock ? true : false
-        }
+    let errors = validationResult(req);
         
-        // Paso 2 - Guardar el nuevo producto en el array de usuarios
+    if(errors.isEmpty()){
+        db.Product.create({
+            ...req.body,
+            user_id: 4 
+        })
+        .then((project) => {
+            let arrayImages = req.files.map(image => {
+            return {
+                imageName: image.filename,
+                product_id: product.id
+            } 
+            })
 
-        products.push(newProduct)
-
-       // Paso 3 - Escribir el JSON de productos con el array actual
-
-       writeProducts(products)
-
-       // Paso 4 - Devolver respuesta (redirección)
-
-       res.redirect('/admin/productos')
+            db.ProductImage.bulkCreate(arrayImages)
+            .then(() => res.redirect('/admin/productos'))
+            .catch(error => console.log(error))
+        })
+        .catch(error => console.log(error))
+    }else{
+        res.render('admin/products/addProduct', { 
+        titulo: "Agregar Producto",
+        errors: errors.mapped(),
+        old: req.body
+        })
+    } 
     },
+
+
     /* Envia la vista de form de edición de producto */
+    
     productEdit: (req, res) => {
-        /* 1 - Obtener el id del producto */
-        let idProducto = +req.params.id;
-        /* 2 - Buscar el producto a editar */
-        let producto = products.find(producto => producto.id === idProducto)
-        /* 3 - Mostrar el producto en la vista */
-        res.render('admin/products/editProduct', {
-            titulo: "Edición",
+        let productId = +req.params.id;
+  
+        db.Product.findByPk(productId)
+        .then(producto => {
+          res.render('admin/products/editProduct', {
+            titulo: "Editar producto",
             producto
+          })
         })
-    },
+        .catch(error => console.log(error))
+      },
+
+
     /* Recibe los datos actualizados del form de edición */
+   
     productUpdate: (req, res) => {
-        /* 1 - Obtener el id del producto */
-        let idProducto = +req.params.id;
-        /* 2 - Buscar el producto a editar y modificar el producto */
-        products.forEach(producto => {
-            if(producto.id === idProducto){
-                producto.name = req.body.name
-                producto.price = req.body.price
-                producto.discount = req.body.discount
-                producto.categoryId = req.body.categoryId
-                producto.projectId = req.body.projectId
-                producto.stock = req.body.stock ? true : false
-                producto.description = req.body.description
+        let errors = validationResult(req);
+  
+        if(errors.isEmpty()){
+          db.Product.update({
+            ...req.body,
+            user_id: 4 /* req.session.user.id */
+          },{
+            where: {
+              id: req.params.id,
             }
-        })
+          })
+          .then(() => {
+            if(req.files !== undefined){
+              //1 - Preguntar si está subiendo imagenes
+              if(req.files.length > 0){
+                //2 - Traer imágenes del project
+                //2 - a. obtener todas las imágenes del proyecto
+                db.Product.findAll({
+                  where: {
+                    image: req.params.id
+                  }
+                })
+                .then((image) => {
+                  //2 - b. hacer un array con los nombres de las imagenes.
+                  let imageNames = images.map(image => image.imageName);
+                  //3 - Eliminar imagenes del servidor
+                  imageNames.forEach(image => {
+                    if(fs.existsSync(path.join(__dirname, `../../../public/images/products/${image}`))){
+                      fs.unlinkSync(path.join(__dirname, `../../../public/images/products/${image}`))
+                    }else{
+                      console.log("-- No se encontró el archivo");
+                    }
+                  });
+                  //4 - Eliminar las imágenes de la tabla
+                  db.Product.destroy({
+                    where: {
+                      image: req.params.id,
+                    }
+                  })
+                  .then(() => {
+                    //5 - Cargar nuevas imágenes
+                    let arrayImages = req.files.map(image => {
+                      return {
+                        imageName: image.filename,
+                        product_id: req.params.id
+                      } 
+                     })
+         
+                     db.Product.bulkCreate(arrayImages)
+                     .then(() => res.redirect('/admin/productos'))
+                     .catch(error => console.log(error))
+                  })
+                  .catch(error => console.log(error))
+                })
+                .catch(error => console.log(error))
+              }else{
+                res.redirect('/admin/productos')
+              }
+            }
+          })
+          .catch(error => console.log(error))
+        }else{
+          let productId = +req.params.id;
+  
+          
+          db.Product.findByPk(productId)
+          .then(producto => {
+            res.render('admin/products/editProduct', {
+              titulo: "Editar Producto",
+              producto,
+              errors: errors.mapped(),
+              old: req.body
+            })
+          })
+          .catch(error => console.log(error))
+        }
+      },
 
-        /* 3 - Guardar los cambios */
-        writeProducts(products);
-
-        /* 4 - Respuesta */
-        res.redirect('/admin/productos');
-    },
     /* Recibe la info del producto a eliminar */
     productDelete: (req, res) => {
-        /* 1 - Obtener el id del producto a eliminar */
-        let idProducto = +req.params.id;
-        /* 2 - Buscar el producto dentro del array y eliminarlo */
-        products.forEach(producto => {
-            if(producto.id === idProducto){
-                //Obtener la ubicación (índice) del producto a eliminar
-                let productToDeleteIndex = products.indexOf(producto);
-                //Elimino el producto del array
-                products.splice(productToDeleteIndex, 1)
-            }
+        let productId = +req.params.id;
+  
+        db.Product.findAll({
+          where: {
+            product_id: productId,
+          }
         })
-        /* 3 - Sobreescribir el json */
-        writeProducts(products);
-        /* 4 - Enviar respuesta  */
-        res.redirect('/admin/productos')
-    },
-    /* Recibe los datos del producto a buscar */
-    productSearch: (req, res) => {
-
-    },
+        .then((images) => {
+          let imageNames = images.map(image => image.imageName);
+  
+          imageNames.forEach(image => {
+            if(fs.existsSync(path.join(__dirname, `../../../public/images/products/${image}`))){
+              fs.unlinkSync(path.join(__dirname, `../../../public/images/products/${image}`))
+            }else{
+              console.log("-- No se encontró el archivo");
+            }
+          });
+  
+          db.Product.destroy({
+            where: {
+              product_id: productId,
+            }
+          })
+          .then(() => {
+            //Eliminar los productos
+            db.Product.destroy({
+              where: {
+                product_id: productId,
+              }
+            })
+            .then(() => {
+              db.Product.destroy({
+                where: {
+                  id: productId
+                }
+              })
+              .then(() => res.redirect('/admin/productos'))
+              .catch((error) => console.log(error))
+            })
+            .catch((error) => console.log(error))
+          })
+        })
+        .catch((error) => console.log(error))
+      },
 }
